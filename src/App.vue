@@ -1,29 +1,31 @@
 <template>
     <div id="app">
-        <!-- String array example -->
-        <Dropdown
-            class="bordered"
-            :options="options1"
-            :selected="selected1"
-            @setOption="selected1 = $event"
-        />
+        <div class="row">
+            <!-- String array example -->
+            <Dropdown
+                class="bordered"
+                :options="options1"
+                :selected="selected1"
+                @setOption="selected1 = $event"
+            />
 
-        <!-- Object array example -->
-        <Dropdown
-            :options="options2"
-            :selected="selected2"
-            @setOption="selected2 = $event"
-        />
+            <!-- Object array example -->
+            <Dropdown
+                :options="options2"
+                :selected="selected2"
+                @setOption="selected2 = $event"
+            />
 
-        <!-- Dropdown menu example -->
-        <Dropdown class="bordered">
-            <template slot="dropdown-button">Menu</template>
-            <template slot="dropdown-content">
-                <a href="" class="dropdown-option">Link 1</a>
-                <a href="" class="dropdown-option">Link 2</a>
-                <a href="" class="dropdown-option">Link 3</a>
-            </template>
-        </Dropdown>
+            <!-- Dropdown menu example -->
+            <Dropdown class="bordered">
+                <template slot="dropdown-button">Menu</template>
+                <template slot="dropdown-content">
+                    <a href="" class="dropdown-option">Link 1</a>
+                    <a href="" class="dropdown-option">Link 2</a>
+                    <a href="" class="dropdown-option">Link 3</a>
+                </template>
+            </Dropdown>
+        </div>
     </div>
 </template>
 
@@ -67,14 +69,13 @@ body {
     color: #2c3e50;
 }
 #app {
+    margin-top: 5rem;
+}
+.row {
     display: flex;
     justify-content: center;
-    text-align: center;
-    margin-top: 60px;
-}
-.img {
-    display: block;
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
 }
 </style>
