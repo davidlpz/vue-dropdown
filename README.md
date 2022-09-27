@@ -1,4 +1,4 @@
-# imagebox
+# vue-dropdown
 
 ## Project setup
 ```
