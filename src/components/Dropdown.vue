@@ -153,7 +153,7 @@ export default {
 .dropdown-button {
     position: relative;
     width: 100%;
-    padding: .625rem .875rem;
+    padding: .625rem 2rem .625rem .875rem;
     font: inherit;
     color: inherit;
     text-align: left;
@@ -171,8 +171,8 @@ export default {
     top: 50%;
     right: .4rem;
     transform: translate(0, -50%) scale(1);
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
     transition: .25s;
 }
 .dropdown-menu {
