@@ -18,8 +18,8 @@
 
             <!-- Dropdown menu example -->
             <Dropdown class="bordered">
-                <template slot="dropdown-button">Menu</template>
-                <template slot="dropdown-content">
+                <template #dropdown-button>Menu</template>
+                <template #dropdown-content>
                     <a href="" class="dropdown-option">Link 1</a>
                     <a href="" class="dropdown-option">Link 2</a>
                     <a href="" class="dropdown-option">Link 3</a>
