@@ -49,7 +49,7 @@ export default {
 
     emits: {
         setOption(option) {
-            return typeof option === 'string';
+            return typeof option === 'string' || typeof option.name === 'string';
         }
     },
 
