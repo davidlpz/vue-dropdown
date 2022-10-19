@@ -47,6 +47,12 @@ export default {
         }
     },
 
+    emits: {
+        setOption(option) {
+            return typeof option === 'string';
+        }
+    },
+
     data () {
         return {
             isOpen: false
